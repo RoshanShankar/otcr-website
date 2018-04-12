@@ -29,7 +29,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -222,6 +222,30 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(93, 188, 210, 1);
   border: 2px solid rgba(93, 188, 210, 1);
 }
+
+#hero .social-links a:hover {
+  background: rgba(93, 188, 210, 1);
+  color: #fff;
+}
+
+#hero .social-links {
+  padding-bottom: 20px;
+}
+
+#hero .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
