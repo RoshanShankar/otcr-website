@@ -631,12 +631,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box:hover .icon i {
-  color: rgba(93, 188, 210, 1);
+  /*color: rgba(93, 188, 210, 1);*/
 }
 
 #services .box:hover .icon a {
-  color: rgba(93, 188, 210, 1);
-  background: #fff;
+  /*color: rgba(93, 188, 210, 1);
+  background: #fff;*/
 }
 
 #services .title {
