@@ -14,11 +14,11 @@ body {
 }
 
 a {
-  color: #2dc997;
+  color: rgba(93, 188, 210, 1);
 }
 
 a:hover, a:active, a:focus {
-  color: #2dca98;
+  color: rgba(50, 150, 200, 1);
   outline: none;
   text-decoration: none;
 }
