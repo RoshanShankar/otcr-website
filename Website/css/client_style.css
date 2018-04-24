@@ -14,11 +14,11 @@ body {
 }
 
 a {
-  color: #2dc997;
+  color: rgba(93, 188, 210, 1);
 }
 
 a:hover, a:active, a:focus {
-  color: #2dca98;
+  color: rgba(50, 150, 200, 1);
   outline: none;
   text-decoration: none;
 }
@@ -631,12 +631,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box:hover .icon i {
-  color: rgba(93, 188, 210, 1);
+  /*color: rgba(93, 188, 210, 1);*/
 }
 
 #services .box:hover .icon a {
-  color: rgba(93, 188, 210, 1);
-  background: #fff;
+  /*color: rgba(93, 188, 210, 1);
+  background: #fff;*/
 }
 
 #services .title {
@@ -741,7 +741,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item {
   position: relative;
-  height: 200px;
+  height: 250px;
   overflow: hidden !important;
   margin-bottom: 15px;
   transition: all 350ms ease;
@@ -754,6 +754,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #portfolio .portfolio-item img {
+  background-color: #fff;
   position: relative;
   top: 0;
   transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
