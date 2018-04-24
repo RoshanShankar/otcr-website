@@ -575,7 +575,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .icon-box .title {
-  margin-left: 80px;
+  margin-left: 0px;
   font-weight: 500;
   margin-bottom: 5px;
   font-size: 18px;
