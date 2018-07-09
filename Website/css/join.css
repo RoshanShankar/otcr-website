@@ -614,6 +614,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Services Section
 --------------------------------*/
+.practice-case {
+  width: 47.5%;
+}
+
+#May {
+  margin-right:2.5%;
+}
+
+#Solomon {
+  margin-left:2.5%;
+}
+
+
 #services {
   background: #fff;
   background-size: cover;
