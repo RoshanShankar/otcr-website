@@ -695,15 +695,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #call-to-action .cta-text {
   color: #fff;
+  text-align: center;
 }
-
+/**
 @media (min-width: 769px) {
   #call-to-action .cta-btn-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
-}
+} **/
 
 #call-to-action .cta-btn {
   font-family: "Lato", sans-serif;
