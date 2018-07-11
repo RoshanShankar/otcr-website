@@ -82,15 +82,14 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(52, 59, 64, 1);
-  padding: 30px 0;
-  height: 92px;
+  /*background:rgba(52, 59, 64, 1);*/
+  height: 65px;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 997; 
 }
 
 #header #logo {
@@ -127,10 +126,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-fixed {
-  background: rgba(52, 59, 64, 1);
+  /*rgba(0, 51, 97, 1)*/
+  background: rgba(36, 48, 72, 1);
   padding: 30px 0;
-  height: 92px;
-  transition: all 0.5s;
+  height: 65px;
+  transition: all 0s;
 }
 
 /*--------------------------------------------------------------
@@ -236,7 +236,8 @@ h1, h2, h3, h4, h5, h6 {
 #hero .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #333;
+  /*background: #333;*/
+  border: 2px solid #fff;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -343,7 +344,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #003360/*#5DBCD2*/;
+  background-color: #ffffff/*#5DBCD2*/;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
