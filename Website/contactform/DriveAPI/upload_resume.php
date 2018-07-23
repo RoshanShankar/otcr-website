@@ -20,7 +20,8 @@ function getApplicationFolder($driveService)
 
         //Find the folder that all the applicant information needs to be put in
         foreach ($response->files as $file) {
-            if ($file->name == 'Applications')
+            //CHANGE THIS FILE NAME DEPENDING ON THE APPLICATION CYCLE
+            if ($file->name == 'Fall 2018')
             return $file->id;
         }
         $pageToken = $repsonse->pageToken;
