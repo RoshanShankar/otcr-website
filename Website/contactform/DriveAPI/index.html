@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="form">
+        <form name="application" method="post" action="upload_resume.php" enctype="multipart/form-data">
+            <input type="text" name="name" value="Your Name *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+            <input type="text" name="email" value="Your E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+            <textarea name = "message" cols="0" rows="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
+            <input type="file" name="file" size="50"/>
+            <br/>
+            <input type="submit" value="Upload"/>
+        </form>
+    </div>
+</body>
+</html>
