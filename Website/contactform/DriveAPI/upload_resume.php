@@ -47,11 +47,23 @@ function createApplicantFolder($driveService, $parentFolderId, $studentName)
         if(move_uploaded_file($_FILES['file']['tmp_name'], $targetfolder . basename( $_FILES['file']['name']))) {
             //success
         } else {
-            echo "Problem uploading file. Please try again;";
+            ob_start();
+            echo '
+            <script type="text/javascript">
+            alert("Problem uploading file. Please try again or contact a OTCR administrator.");
+            window.location = "http://otcr.illinois.edu/join.html#contact";
+            </script>';
+            ob_end_flush();
             break;
         }
     } else {
-        echo "You may only upload PDF files.";
+        ob_start();
+        echo '
+        <script type="text/javascript">
+        alert("You may only upload PDF files.");
+        window.location = "http://otcr.illinois.edu/join.html#contact";
+        </script>';
+        ob_end_flush();
         break;
     }
 
@@ -66,7 +78,14 @@ function createApplicantFolder($driveService, $parentFolderId, $studentName)
         'mimeType' => 'application/pdf',
         'uploadType' => 'multipart',
         'fields' => 'id'));
-    //SUBJECT TO CHANGE
-    header('Location: application_successful.html');
+
+    //Redirect
+    ob_start();
+    echo '
+    <script type="text/javascript">
+    alert("Application submitted.");
+    window.location = "http://otcr.illinois.edu/";
+    </script>';
+    ob_end_flush();
 }
 ?>
