@@ -7,9 +7,12 @@ $to = $myemail;
 $email_subject = "From ".$name. "; Email: ".$email_address;
 $email_body = "$message";
 mail($to,$email_subject,$email_body);
-header('Location: http://www.otcr.illinois.edu/index.html#..........'); 
-echo '<script language="javascript">';
-echo 'alert("Message successfully sent.")';
-echo '</script>';
+ob_start();
+echo '
+<script type="text/javascript">
+alert("Email sent! We will get back to you as soon as possible.");
+window.location = "http://otcr.illinois.edu/";
+</script>';
+ob_end_flush();
 exit;
 ?>
