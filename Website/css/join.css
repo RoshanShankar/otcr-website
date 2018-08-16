@@ -722,7 +722,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-#call-to-action .cta-btn {
+.top {
+  text-align: center;
+}
+
+#call-to-action .button {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -735,12 +739,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 10px;
   border: 2px solid #fff;
   color: #fff;
+  background: rgba(0, 53, 97, 1);
 }
 
+/*
 #call-to-action .cta-btn:hover {
-  background: #b392cc;
-  border: 2px solid #b392cc;
-}
+  background: rgba(0, 53, 97, 1);
+ border: 2px solid #b392cc;
+} */
 
 /* Portfolio Section
 --------------------------------*/

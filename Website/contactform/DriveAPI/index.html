@@ -1,15 +1,87 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link href="app_style.css" rel="stylesheet">
+</head>
 <body>
-    <div class="form">
-        <form name="application" method="post" action="upload_resume.php" enctype="multipart/form-data">
-            <input type="text" name="name" value="Your Name *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-            <input type="text" name="email" value="Your E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-            <textarea name = "message" cols="0" rows="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
-            <input type="file" name="file" size="50"/>
-            <br/>
-            <input type="submit" value="Upload"/>
-        </form>
+  <br>
+  <div class="container">
+
+    <div class="wrapper">
+      <ul class="steps">
+        <li class="is-active">Step 1: Personal</li>
+        <li>Step 2: Academic</li>
+        <li>Step 3: Resume</li>
+        <li>Step 4: Question</li>
+      </ul>
+      <form class="form-wrapper">
+        <fieldset class="section is-active">
+          <h3>Your Details</h3>
+          <div class="form-group">
+            <input class="info" type="text" name="name" value="Your Name *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+          </div>
+          <div class="form-group">
+            <input class="info" type="tel" name="phone number" value="Your Phone Number *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+          </div>
+          <div class="form-group">
+            <input class="info" type="email" name="email" value="Your E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+          </div>
+          <div class="form-group">
+            <input class="info" type="text" name="netid" value="Your Net ID *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+          </div>
+          <div class="button">Next</div>
+        </fieldset>
+        <fieldset class="section">
+          <h3>Academic Information</h3>
+          <div class="form-group">
+            <input class="info" type="text" name="major" value="Your Major *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+          </div>
+          <div class="form-group">
+            Graduation Year
+            <select class="drop" name="graduation year">
+              What is your anticipated graduation year?
+              <br>
+              <option class="drop" name="year" value="2020" checked> 2020<br>
+              <option class="drop" name="year" value="2021"> 2021<br>
+              <option class="drop" name="year" value="2022"> 2022<br>
+            </select>
+          </div>
+          <div class="form-group">
+            What is your cumulative GPA? If you are a freshman, leave this field at 0.00
+            <input class="info" type="number" name="gpa" min="0.00" max="4.00" step=".01" value="0.00" onfocus="if(this.value==this.defaultValue)this.value=0.00;">
+          </div>
+          <div class="button">Next</div>
+        </fieldset>
+        <fieldset class="section">
+          <h3>Please Upload your Resume</h3>
+          <div>
+            <input class="info" type="file" name="file" size="50"/>
+          </div>
+          <br>
+          <div class="form-group">
+            <input class="button-style" type="submit" value="Upload"/>
+            <div class="button">Next</div>
+          </div>
+        </fieldset>
+        <fieldset class="section">
+          <h3>Challenge Question</h3>
+          <div>
+            Please layout a high-level structure to describe how you would approach the following situation. Please note that you do not have to solve this case. Simply outline your approach to solving it. Feel free to use bullet points, lists, etc. to make the strategy clear and concise. (500 words or less)
+            <br>
+            <br>
+Fast Food Co currently operates 15 fast food restaurants across the Greater Chicago Area. The company sells products such as burgers, fries, pizzas and wraps and their most popular product is the “Build Your Own”. Fast Food Co wants to understand if it can expand to the Champaign-Urbana campus area. The company also feels that it should take advantage of the growth of technology to help increase its sales to students. Fast Food Co. has hired OTCR Consulting to address the following: 1) What factors should Fast Food Co analyze to understand if it should expand to the Champaign-Urbana area and 2) How can Fast Food Co. leverage technology to help them increase sales?
+            <br>
+            <br>
+            <textarea rows="40" class="info" name = "message" cols="0" rows="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Your Answer *</textarea>
+        </div>
+            <br>
+            <div ><button class="end" type="submit">Submit</button></div>
+        </fieldset>
+      </form>
     </div>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
