@@ -16,4 +16,18 @@ $(document).ready(function(){
       $(document).find(".steps li").first().addClass("is-active");
     }
   });
+
+  $(".prev_button").click(function() {
+    var button = $(this);
+    var currentSection = button.parents(".section");
+    var currentSectionIndex = currentSection.index();
+    var headerSection = $('.steps li').eq(currentSectionIndex);
+    currentSection.removeClass("is-active").prev().addClass("is-active");
+    headerSection.removeClass("is-active").prev().addClass("is-active");
+
+    if(currentSectionIndex === 0){
+      $(document).find(".form-wrapper .section").last().addClass("is-active");
+      $(document).find(".steps li").last().addClass("is-active");
+    }
+  });
 });

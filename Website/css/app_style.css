@@ -169,17 +169,30 @@ fieldset{
   font-family: 'Open Sans', sans-serif !important;
 }
 
-.end {
+.prev_button {
   background-color: rgba(0, 53, 97, 1);
   display: inline-block;
-  padding: 10px 30px;
+  padding: 8px 30px;
   color: #fff;
   cursor: pointer;
   font-size: 14px !important;
   font-family: 'Open Sans', sans-serif !important;
+  position: absolute;
+  right: 78%;
+  bottom: 20px;
+}
+
+.end {
+  background-color: rgba(0, 53, 97, 1);
+  display: inline-block;
+  padding: 8px 30px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px !important;
+  font-family: 'Open Sans', sans-serif !important;
+  position: absolute;
   right: 20px;
   bottom: 20px;
-  text-align: center;
 }
 
 .form-wrapper .submit{
@@ -586,4 +599,12 @@ input[type="checked"]:after {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+#long_answer {
+  margin-bottom: 5%;
 }
