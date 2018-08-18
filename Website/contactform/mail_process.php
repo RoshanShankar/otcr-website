@@ -8,5 +8,4 @@ $email_subject = "From ".$name. "; Email: ".$email_address;
 $email_body = "$message";
 $mailheader = "From: $email_address \r\n";
 mail($to, $email_subject, $message, $mailheader) or die("Error!");
-ob_start();
-echo "Thank You!" . " -" . "<a href='form.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";?>
+echo "Thank You!" . " -" . "<a href='index.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";?>
