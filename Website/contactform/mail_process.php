@@ -1,5 +1,5 @@
 <?php
-$myemail = '';
+$myemail = 'rishabh3@illinois.edu';
 $name = $_POST['name'];
 $email_address = $_POST['email'];
 $message = $_POST['message'];
