@@ -316,13 +316,7 @@ p, h1, form, button{border:0; margin:0; padding:0;}
 		padding-bottom:10px;
 	}
 		
-	#stylized label{
-		display:block;
-		font-weight:bold;
-		text-align:right;
-		width:140px;
-		float:left;
-	}
+	
 	#stylized .small{
 		color:#666666;
 		display:block;
@@ -333,10 +327,11 @@ p, h1, form, button{border:0; margin:0; padding:0;}
 	}
 	#stylized input{
 		float:left;
+		font-family:"Open Sans", sans-serif;
 		font-size:12px;
 		padding:4px 2px;
 		border:solid 1px #aacfe4;
-		width:200px;
+		width:400px;
 		margin:2px 0 20px 10px;
 	}
 	#stylized button{ 
@@ -360,12 +355,10 @@ p, h1, form, button{border:0; margin:0; padding:0;}
 
 <form id="form1" id="form1" action="mail.php" method="POST">
 
-<input type="text" name="name" placeholder = "Name">
-    <label>Email
-    </label>
-<input type="text" name="email" placeholder = "E-Mail">
+<input type="text" name="name" placeholder = "Your Name">
+<input type="text" name="email" placeholder = "Your E-Mail">
 <input type="text" name="subject" placeholder = "Subject">
-<textarea name="message" rows="6" cols="25">Message</textarea><br />
+<input name="message" rows="6" cols="27"><br />
 
     <button type="submit" value="Send" style="margin-top:15px;">Submit</button>
 <div class="spacer"></div>
