@@ -2,7 +2,7 @@ $(document).ready(function(){
   $(".end").click(function() {
     $.ajax ({
       var clickBtnValue = $(this).val();
-      var ajaxurl = '/contactform/DriveAPI/upload_resume.php',
+      var ajaxurl = 'contactform/DriveAPI/upload_resume.php',
 
       $.get('ajaxurl', function(data) {
        eval(data);
