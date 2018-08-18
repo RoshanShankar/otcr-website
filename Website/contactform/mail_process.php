@@ -6,13 +6,7 @@ $message = $_POST['message'];
 $to = $myemail;
 $email_subject = "From ".$name. "; Email: ".$email_address;
 $email_body = "$message";
-mail($to,$email_subject,$email_body);
+$mailheader = "From: $email_address \r\n";
+mail($to, $email_subject, $message, $mailheader) or die("Error!");
 ob_start();
-echo '
-<script type="text/javascript">
-alert("Email sent! We will get back to you as soon as possible.");
-window.location = "http://otcr.illinois.edu/";
-</script>';
-ob_end_flush();
-exit;
-?>
+echo "Thank You!" . " -" . "<a href='form.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";?>
