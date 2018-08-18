@@ -1,5 +1,7 @@
 jQuery(document).ready(function( $ ) {
 
+
+
   // Header fixed and Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > $(".hero-container").outerHeight() - $("#header").outerHeight()) {
