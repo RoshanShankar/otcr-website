@@ -11,8 +11,8 @@
       <ul class="steps">
         <li class="is-active">Step 1: Personal</li>
         <li>Step 2: Academic</li>
-        <li>Step 3: Resume</li>
-        <li>Step 4: Question</li>
+        <li>Step 3: Question</li>
+        <li>Step 4: Resume</li>
       </ul>
       <form method = "" action = "POST" class="form-wrapper">
         <fieldset class="section is-active">
@@ -90,15 +90,6 @@
           <div class="button">Next</div>
         </fieldset>
         <fieldset class="section">
-          <h3>Please Upload your Resume</h3>
-          <div>
-            <input class="info" type="file" name="file" size="50" required />
-          </div>
-          <br>
-            <div class="prev_button">Previous</div>
-            <div class="button">Next</div>
-        </fieldset>
-        <fieldset class="section">
           <h3>Challenge Question</h3>
           <div>
             Please layout a high-level structure to describe how you would approach the following situation. Please note that you do not have to solve this case. Simply outline your approach to solving it. Feel free to use bullet points, lists, etc. to make the strategy clear and concise. (500 words or less)
@@ -109,7 +100,15 @@ Fast Food Co currently operates 15 fast food restaurants across the Greater Chic
             <br>
             <textarea id="long_answer" required rows="40" class="info" name = "message" cols="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Your Answer *</textarea>
         </div>
-            <br>
+          <br>
+            <div class="prev_button">Previous</div>
+            <div class="button">Next</div>
+        </fieldset>
+        <fieldset class="section">
+          <h3>Please Upload your Resume</h3>
+          <div>
+            <input class="info" type="file" name="file" size="50" required />
+          </div>
             <div class="prev_button">Previous</div>
             <div ><button onclick="submitFile()" class="end" type="submit">Submit</button></div>
         </fieldset>
