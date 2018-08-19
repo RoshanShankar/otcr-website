@@ -53,7 +53,7 @@ function createApplicantFolder($driveService, $parentFolderId, $studentName)
     }
     fwrite($handle, "\n".'How they heard about OTCR: '.$checkbox."\n");
     fwrite($handle, "\n".'Major: '.$_POST['major']);
-    fwrite($handle, "\n".'Graduation Year: '.$_POST['start_year']);
+    fwrite($handle, "\n".'Start Year: '.$_POST['start_year']);
     fwrite($handle, "\n".'Graduation Year: '.$_POST['graduation_year']);
     fwrite($handle, "\n".'GPA: '.$_POST['gpa']."\n");
     fwrite($handle, "\n".'Challenge Question Response: '.$_POST['message']);
