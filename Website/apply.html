@@ -11,17 +11,17 @@
       <ul class="steps">
         <li class="is-active">Step 1: Personal</li>
         <li>Step 2: Academic</li>
-        <li>Step 3: Question</li>
-        <li>Step 4: Resume</li>
+        <li>Step 3: Resume</li>
+        <li>Step 4: Question</li>
       </ul>
-      <form method = "" action = "POST" class="form-wrapper">
+      <form method ="post" action ="contactform/DriveAPI/upload_resume.php"  enctype="multipart/form-data" class="form-wrapper">
         <fieldset class="section is-active">
           <h3>Your Details</h3>
           <div class="form-group">
             <input class="info" type="text" name="name" value="Full Name *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" required>
           </div>
           <div class="form-group">
-            <input class="info" type="tel" name="phone number" value="Phone Number *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" required>
+            <input class="info" type="text" name="phone_number" value="Phone Number *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" required>
           </div>
           <div class="form-group">
             <input class="info" type="email" name="email" value="E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" required>
@@ -38,7 +38,7 @@
           <input id="bquad" class="info" type="checkbox" name="bquad" value="Business Quad Day"><label for="bquad">Business Quad Day</label>
           </div>
           <div class="check">
-          <input id="info_night" class="info" type="checkbox" name="info night" value="Info Nights"><label for="info_night">Info Nights</label>
+          <input id="info_night" class="info" type="checkbox" name="info_night" value="Info Nights"><label for="info_night">Info Nights</label>
           <input id="social" class="info" type="checkbox" name="social" value="Social Media"><label for="social"> Social Media</label>
           </div>
           <div class="check">
@@ -55,31 +55,31 @@
           </div>
           <div class="form-group">
             Start Term
-            <select class="drop" name="graduation year" required>
+            <select class="drop" name="start_year" required>
               <br>
-              <option class="drop" name="year" value="2020" checked> Fall 2018<br>
-              <option class="drop" name="year" value="2021"> Spring 2017<br>
-              <option class="drop" name="year" value="2022"> Fall 2017<br>
-              <option class="drop" name="year" value="2022"> Spring 2016<br>
-              <option class="drop" name="year" value="2022"> Fall 2016<br>
-              <option class="drop" name="year" value="2022"> Spring 2015<br>
-              <option class="drop" name="year" value="2022"> Fall 2015<br>
-              <option class="drop" name="year" value="2022"> Earlier<br>
+              <option class="drop" name="year" value="Fall 2018" checked> Fall 2018<br>
+              <option class="drop" name="year" value="Spring 2017"> Spring 2017<br>
+              <option class="drop" name="year" value="Fall 2017"> Fall 2017<br>
+              <option class="drop" name="year" value="Spring 2016"> Spring 2016<br>
+              <option class="drop" name="year" value="Fall 2016"> Fall 2016<br>
+              <option class="drop" name="year" value="Spring 2015"> Spring 2015<br>
+              <option class="drop" name="year" value="Fall 2015"> Fall 2015<br>
+              <option class="drop" name="year" value="Earlier"> Earlier<br>
             </select>
           </div>
           <div class="form-group">
             Expected Final Term
-            <select class="drop" name="graduation year" required>
+            <select class="drop" name="graduation_year" required>
               <br>
-              <option class="drop" name="year" value="2020" checked>Fall 2018<br>
-              <option class="drop" name="year" value="2021"> Spring 2019<br>
-              <option class="drop" name="year" value="2022"> Fall 2019<br>
-              <option class="drop" name="year" value="2022"> Spring 2020<br>
-              <option class="drop" name="year" value="2022"> Fall 2020<br>
-              <option class="drop" name="year" value="2022"> Spring 2021<br>
-              <option class="drop" name="year" value="2022"> Fall 2021<br>
-              <option class="drop" name="year" value="2022"> Spring 2022<br>
-              <option class="drop" name="year" value="2022"> Later<br>
+              <option class="drop" name="year" value="Fall 2018" checked>Fall 2018<br>
+              <option class="drop" name="year" value="Spring 2019"> Spring 2019<br>
+              <option class="drop" name="year" value="Fall 2019"> Fall 2019<br>
+              <option class="drop" name="year" value="Spring 2020"> Spring 2020<br>
+              <option class="drop" name="year" value="Fall 2020"> Fall 2020<br>
+              <option class="drop" name="year" value="Spring 2021"> Spring 2021<br>
+              <option class="drop" name="year" value="Fall 2021"> Fall 2021<br>
+              <option class="drop" name="year" value="Spring 2022"> Spring 2022<br>
+              <option class="drop" name="year" value="Later"> Later<br>
             </select>
           </div>
           <div class="form-group">
@@ -88,6 +88,18 @@
           </div>
           <div class="prev_button">Previous</div>
           <div class="button">Next</div>
+        </fieldset>
+        <fieldset class="section">
+          <h3>Please Upload your Resume</h3>
+          <div>
+            <input type="file" name="file" size="50"/>
+          </div>
+          <br>
+          <div class="form-group">
+
+            <div class="prev_button">Previous</div>
+            <div class="button">Next</div>
+          </div>
         </fieldset>
         <fieldset class="section">
           <h3>Challenge Question</h3>
@@ -100,17 +112,9 @@ Fast Food Co currently operates 15 fast food restaurants across the Greater Chic
             <br>
             <textarea id="long_answer" required rows="40" class="info" name = "message" cols="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Your Answer *</textarea>
         </div>
-          <br>
+            <br>
             <div class="prev_button">Previous</div>
-            <div class="button">Next</div>
-        </fieldset>
-        <fieldset class="section">
-          <h3>Please Upload your Resume</h3>
-          <div>
-            <input class="info" type="file" name="file" size="50" required />
-          </div>
-            <div class="prev_button">Previous</div>
-            <div ><button onclick="submitFile()" class="end" type="submit">Submit</button></div>
+            <input type="submit" value="Upload"/>
         </fieldset>
       </form>
     </div>
@@ -118,7 +122,7 @@ Fast Food Co currently operates 15 fast food restaurants across the Greater Chic
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/app.js"></script>
-    <script>
+    <!--<script>
     function submitFile(){
       var ajaxurl = 'contactform/DriveAPI/upload_resume.php',
 
@@ -126,6 +130,6 @@ Fast Food Co currently operates 15 fast food restaurants across the Greater Chic
          eval(data);
        });
     }
-    </script>
+  </script>-->
 </body>
 </html>
